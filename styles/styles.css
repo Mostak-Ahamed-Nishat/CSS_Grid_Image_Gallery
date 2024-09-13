@@ -30,7 +30,7 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-auto-flow: dense;
     grid-auto-rows: 10px;
-    gap: 16px;
+    grid-gap: 19px;
 }
 
 
