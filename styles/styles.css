@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 20px auto;
+}
+
+/* Gallery Container */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-flow: dense;
+    grid-auto-rows: 10px;
+    gap: 16px;
+}
+
+
+/* Individual Image */
+.gallery img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.upload-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    /* Button background color */
+    color: #fff;
+    /* Text color */
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.upload-btn:hover {
+    background-color: #0056b3;
+}
+
+input[type="file"] {
+    display: none;
+}
